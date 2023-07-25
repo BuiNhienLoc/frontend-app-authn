@@ -16,7 +16,7 @@
     "sso.create.account.using": "Tạo tài khoản bằng {providerName}",
     "show.password": "Hiển thị mật khẩu",
     "hide.password": "Ẩn mật khẩu",
-    "one.letter": "1 kí tự",
+    "one.letter": "1 chữ cái",
     "one.number": "1 số",
     "eight.characters": "8 ký tự",
     "password.sr.only.helping.text": "Mật khẩu phải chứa ít nhất 8 ký tự, ít nhất một chữ cái và ít nhất một số",
