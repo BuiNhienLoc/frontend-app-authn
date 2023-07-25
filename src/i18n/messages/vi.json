@@ -166,5 +166,7 @@
     "reset.server.rate.limit.error": "Quá nhiều yêu cầu.",
     "reset.password.success.heading": "Đặt lại mật khẩu hoàn tất.",
     "reset.password.success": "Mật khẩu của bạn đã được thiết lập lại. Đăng nhập vào tài khoản của bạn.",
-    "rate.limit.error": "Đã xảy ra lỗi do có quá nhiều yêu cầu. Vui lòng thử lại sau một thời gian"
+    "rate.limit.error": "Đã xảy ra lỗi do có quá nhiều yêu cầu. Vui lòng thử lại sau một thời gian",
+    "username.taken.alert.text": "Tên người dùng này đã được sử dụng với tài khoản khác",
+    "email.used.alert.text": "Email này đã từng hoặc đang liên kết với tài khoản {siteName}"
 }

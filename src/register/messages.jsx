@@ -201,6 +201,16 @@ const messages = defineMessages({
     defaultMessage: 'Did you mean',
     description: 'Did you mean alert suggestion',
   },
+  'username.taken.alert.text': {
+    id: 'username.taken.alert.text',
+    defaultMessage: 'It looks like this username is already taken',
+    description: 'Alert when username is taken',
+  },
+  'email.used.alert.text': {
+    id: 'email.used.alert.text',
+    defaultMessage: 'This email is already associated with an existing or previous {siteName} account',
+    description: 'Alert when email is used',
+  }
 });
 
 export default messages;
