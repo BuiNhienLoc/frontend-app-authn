@@ -366,15 +366,19 @@ describe('RegistrationPage', () => {
         register: {
           ...initialState.register,
           registrationError: {
-            username: [{ userMessage: 'It looks like this username is already taken' }],
-            email: [{ userMessage: `This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account` }],
+            username: [{ userMessage: formatMessage(messages['username.taken.alert.text']) }], 
+            // 'It looks like this username is already taken'
+            email: [{ userMessage: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME })} ],
+            // `This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account`
           },
         },
       });
       const registrationPage = mount(reduxWrapper(<IntlRegistrationPage {...props} />)).find('RegistrationPage');
       expect(registrationPage.prop('backendValidations')).toEqual({
-        email: `This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account`,
-        username: 'It looks like this username is already taken',
+        email: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }),
+        // `This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account`
+        username: formatMessage(messages['username.taken.alert.text']),
+        // 'It looks like this username is already taken'
       });
     });
 
@@ -983,7 +987,8 @@ describe('RegistrationPage', () => {
           ...initialState.register,
           registrationError: {
             errorCode: 'duplicate-email',
-            email: [{ userMessage: `This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account` }],
+            email: [{ userMessage: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }) }],
+            // `This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account`
           },
         },
       });
