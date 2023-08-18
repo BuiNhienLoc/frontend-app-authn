@@ -619,7 +619,8 @@ describe('RegistrationPage', () => {
             ...registrationFormData,
             errors: {
               ...registrationFormData.errors,
-              username: 'It looks like this username is already taken',
+              username: formatMessage(messages['username.taken.alert.text']),
+              //'It looks like this username is already taken'
             },
           },
         },

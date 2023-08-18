@@ -157,7 +157,7 @@ const ForgotPasswordPage = (props) => {
             <p className="mt-5.5 small text-gray-700">
               {formatMessage(messages['additional.help.text'], { platformName })}
               <span>
-                <Hyperlink isInline destination={`mailto:${getConfig().CONTACT_EMAIL}`}>{getConfig().CONTACT_EMAIL}</Hyperlink>
+                <Hyperlink isInline destination={`mailto:hethong@hoctap.vn`}>hethong@hoctap.vn</Hyperlink>
               </span>
             </p>
           </Form>
