@@ -108,8 +108,9 @@ describe('Registration Reducer Tests', () => {
   it('should reset email error field data on focus of email field', () => {
     const state = {
       ...defaultState,
-      registrationError: { email: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }) },
-      //`This email is already associated with an existing or previous ${ getConfig().SITE_NAME } account`
+      // registrationError: { email: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }) },
+      // <TO BE MODIFIED>
+      registrationError: `Email đã được dùng để tại tài khoản trên ${ getConfig().SITE_NAME }`
     };
     const action = {
       type: REGISTERATION_CLEAR_BACKEND_ERROR,
