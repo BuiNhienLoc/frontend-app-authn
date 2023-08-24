@@ -370,7 +370,7 @@ describe('RegistrationPage', () => {
             // 'It looks like this username is already taken'
             // email: [{ userMessage: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME })} ],
             // <TO BE MODIFIED>
-            email: `Email đã được dùng để tại tài khoản trên ${ getConfig().SITE_NAME }`
+            email: `Email đã được dùng để tạo tài khoản trên ${ getConfig().SITE_NAME }`
           },
         },
       });
@@ -378,7 +378,7 @@ describe('RegistrationPage', () => {
       expect(registrationPage.prop('backendValidations')).toEqual({
         // email: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }),
         // <TO BE MODIFIED>
-        email: `Email đã được dùng để tại tài khoản trên ${ getConfig().SITE_NAME }`,
+        email: `Email đã được dùng để tạo tài khoản trên ${ getConfig().SITE_NAME }`,
         username: formatMessage(messages['username.taken.alert.text']),
         // 'It looks like this username is already taken'
       });
@@ -992,7 +992,7 @@ describe('RegistrationPage', () => {
             errorCode: 'duplicate-email',
             // email: [{ userMessage: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }) }],
             // <TO BE MODIFIED>
-            email: `Email đã được dùng để tại tài khoản trên ${ getConfig().SITE_NAME }`
+            email: `Email đã được dùng để tạo tài khoản trên ${ getConfig().SITE_NAME }`
           },
         },
       });

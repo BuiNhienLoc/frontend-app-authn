@@ -110,7 +110,7 @@ describe('Registration Reducer Tests', () => {
       ...defaultState,
       // registrationError: { email: formatMessage(messages['email.used.alert.text'], { siteName: getConfig().SITE_NAME }) },
       // <TO BE MODIFIED>
-      registrationError: `Email đã được dùng để tại tài khoản trên ${ getConfig().SITE_NAME }`
+      registrationError: `Email đã được dùng để tạo tài khoản trên ${ getConfig().SITE_NAME }`
     };
     const action = {
       type: REGISTERATION_CLEAR_BACKEND_ERROR,
