@@ -208,7 +208,8 @@ const messages = defineMessages({
   },
   'email.used.alert.text': {
     id: 'email.used.alert.text',
-    defaultMessage: 'This email is already associated with an existing or previous {siteName} account',
+    // This email is already associated with an existing or previous {siteName} account
+    defaultMessage: 'Email này đã được dùng để tạo tài khoản trên {siteName}',
     description: 'Alert when email is used',
   }
 });
